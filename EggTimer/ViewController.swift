@@ -61,7 +61,6 @@ class ViewController: UIViewController {
             timer = nil
         }
         timer = Timer.scheduledTimer(timeInterval: 1.0, target: self, selector: #selector(ViewController.printTimeRemaining), userInfo: nil, repeats: true )
-//        timer.fire()
     }
     
     func playSound() {
@@ -82,7 +81,6 @@ class ViewController: UIViewController {
             progressBar.progress = 1.0
             playSound()
             timer?.invalidate()
-//            player.play()
         }
     }
     
